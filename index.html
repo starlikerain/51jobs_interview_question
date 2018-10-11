@@ -285,6 +285,10 @@
         let jobs_arrow = $('.jobs_description div:even')
         jobs_descriptions.on('click', function (e) {
             if ($(e.target).height() > '100') {
+                jobs_descriptions.animate({
+                    height: "50px",
+                }, 200);
+                $(this).children('.my_arrow_reverse').removeClass('my_arrow_reverse').addClass('my_arrow');
                 return;
             }
             jobs_arrow.removeClass('my_arrow_reverse').addClass('my_arrow');
