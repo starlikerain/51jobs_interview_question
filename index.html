@@ -284,7 +284,10 @@
         let jobs_descriptions = $('.jobs_description');
         let jobs_arrow = $('.jobs_description div:even')
         jobs_descriptions.on('click', function (e) {
-            if ($(e.target).height() > '100') {
+            let a = e.target; // 用作用户如果点击的是箭头，需要模拟冒泡
+        
+            // debugger;
+            if ($(e.target).height() > '100' || a.className === "my_arrow_reverse") {
                 jobs_descriptions.animate({
                     height: "50px",
                 }, 200);
