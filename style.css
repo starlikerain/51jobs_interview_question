@@ -1,0 +1,345 @@
+html {
+    font-family: "Microsoft YaHei";
+}
+
+/**
+modify scroll bar*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ed6d00,#ed6d00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+    /* background: linear-gradient(gray,gray); */
+}
+.split_line {
+    width: 1000px;
+    height: 2px;
+    background-color: #ed6d00;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.page_header {
+    background-color: #ED6F02;
+    overflow: hidden;
+}
+
+.title {
+    float: left;
+    display: inline-block;
+}
+
+.title a img {
+    position: relative;
+    top: 3px;
+}
+
+.wrap {
+    max-width: 1100px;
+    min-width: 723px;
+    height: 17px;
+    background-color: #ED6F02;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid green; */
+}
+
+.navi {
+    margin-right: 29px;
+    display: block;
+}
+
+.navi a {
+    /* background-color: black; */
+    height: 31px;
+    padding: 0 13px;
+    /* border: 1px solid seashell; */
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding-top: 18px;
+    font-family: "Microsoft YaHei";
+}
+
+.navi a:hover {
+    background-color: #B65500;
+}
+
+.slogan {
+    float: right;
+    height: 47px;
+    /* padding-top: 5px; */
+}
+
+.slogan img {
+    /* position: relative; */
+    top: 30px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/**
+下面是中间banner轮播图的
+*/
+
+.banner_carousel {
+    /* border: 1px solid red; */
+    padding-bottom: -5px;
+    height: 410px;
+    overflow: hidden;
+}
+
+.single-item {
+    height: 10px;
+}
+
+.slick-dots {
+    position: relative;
+    top: 321px;
+    /* background-color: gray; */
+    /* border: 1px solid red; */
+}
+
+.main_section {
+    margin-top: -5px;
+    /* border: 2px solid red; */
+    height: 100px;
+    box-shadow: 0px 0px 21px rgb(146, 146, 146);
+}
+
+/**
+中间 宣讲行程 Q&A 二维码部分
+*/
+
+.main_section_wrap {
+    max-width: 850px;
+    min-width: 723px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main_section_wrap div a {
+    text-decoration: none;
+    font-family: "Microsoft YaHei";
+    color: #535353;
+}
+
+.main_section_wrap div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#my_placeholder {
+    margin-right: 10px;
+}
+
+/**
+后面部分的*/
+
+.after_section {
+    height: 876px;
+    background-image: url('./底层背景.png');
+    padding-top: 0.1px;
+}
+
+.my_submit_resume_btn {
+    height: 40px;
+    width: 109px;
+    border-radius: 10px;
+    background-color: #3EAFA9;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+/**
+不同城市之间选择不同的数据
+*/
+
+.city_invite_area {
+    background-color: hsla(0, 0%, 100%, 0.6);
+    border-radius: 30px;
+    margin-top: 40px;
+    border: 3px dashed orange;
+    width: 1100px;
+    min-width: 1099px;
+    height: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.select_city p {
+    margin-top: 26px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+}
+
+/**
+城市区块，16个城市*/
+
+.my_cities {
+    width: 936px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.my_cities li {
+    display: inline-block;
+    width: 104px;
+    margin-left: 6px;
+    text-align: end;
+    margin-top: 10px;
+}
+
+.my_cities .active {
+    color: #ED6D00;
+}
+
+.my_cities .active::before {
+    font-family: 'slick';
+    font-size: 26px;
+    line-height: 12px;
+    position: relative;
+    top: 5px;
+    left: -22px;
+    width: 80px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 1;
+    color: #ED6D00;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+具体职责区*/
+
+.jobs_detail {
+    overflow: scroll;
+    height: 522px;
+    margin-right: 6px;
+}
+
+.jobs_detail_wrap {
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 522px;
+    width: 936px;
+    border-radius: 10px;
+    /* border: 1px solid green; */
+}
+
+.company_title {
+    margin-top: 26px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+}
+
+.company_title span {
+    color: #ed6d00;
+}
+
+.company_name_triangle {
+    margin-right: 4px;
+    margin-top: 4px;
+    float: left;
+    border-width: 7px;
+    border-color: #ed6d00 transparent transparent transparent;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.jobs_description {
+    height: 50px;
+
+    margin-top: 50px;
+    padding-left: 35px;
+    border: 2px solid #ed6d00;
+    overflow: hidden;
+}
+
+.jobs_description h1 {
+    display: inline-block;
+    color: #707070;
+    margin-top: 17px;
+    font-size: 20px;
+}
+
+.jobs_description h6 {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.jobs_description p {
+    line-height: 30px;
+}
+
+.application {
+    display: inline-block;
+    height: 15px;
+    width: 110px;
+    border: 2px solid #ed6d00;
+    color: #ed6d00;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: right;
+}
+
+.apply_now {
+    position: relative;
+    top: -3px;
+}
+
+/**箭头*/
+
+.my_arrow {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ed6d00;
+    display: inline-block;
+    transform: rotate(45deg);
+    border-left: transparent;
+    border-top: transparent;
+    float: right;
+    margin-top: 12px;
+    margin-right: 23px;
+}
+
+.my_arrow_reverse {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ed6d00;
+    display: inline-block;
+    transform: rotate(-135deg);
+    border-left: transparent;
+    border-top: transparent;
+    float: right;
+    margin-top: 26px;
+    margin-right: 23px;
+}
