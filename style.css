@@ -206,6 +206,7 @@ modify scroll bar*/
     margin-left: 6px;
     text-align: end;
     margin-top: 10px;
+    position: relative;
 }
 
 .my_cities .active {
@@ -216,7 +217,7 @@ modify scroll bar*/
     font-family: 'slick';
     font-size: 26px;
     line-height: 12px;
-    position: relative;
+    position: absolute;
     top: 5px;
     left: -22px;
     width: 80px;
